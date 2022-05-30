@@ -8,10 +8,6 @@
     margin: 20px auto 60px;
 }
 
-.header__search_original {
-    display: none;
-}
-
 .header {
     width: 98%;
     height: 54px;
@@ -156,7 +152,10 @@
     padding: 0;
     cursor: pointer;
     transition: transform .4s linear;
-    
+}
+
+.mainscreen__button:last-child {
+    display: none;
 }
 
 .mainscreen__button:hover {
@@ -188,7 +187,7 @@
     height: 230px;
     gap: 30px;
     grid-template-columns: repeat(3,1fr);
-    background-color: #FFFFFF;
+
 }
 
 .cards-about__card {
@@ -458,68 +457,68 @@
     letter-spacing: 0.035em;
 }
 
-.about-us {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 98%;
-    max-width: 1170px;
-    padding-top: 60px;
-    position: relative;
-}
+    .about-us {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 98%;
+        max-width: 1170px;
+        padding-top: 60px;
+        position: relative;
+    }
 
-.about-us__background {
-    width: 1700px;
-    height: 400px;
-    position: absolute;
-    bottom:-200px;
-    left: -550px;
-    z-index: -1;
-}
+    .about-us__background {
+        width: 1700px;
+        height: 400px;
+        position: absolute;
+        bottom:-200px;
+        left: -550px;
+        z-index: -1;
+    }
 
-.about-us__title {
-    font-family: 'Lora';
-    margin: 0 0 33px;
-    width: 100%;
-    text-align: center;
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 38px;
-    letter-spacing: 0.035em;
-}
+    .about-us__title {
+        font-family: 'Lora';
+        margin: 0 0 33px;
+        width: 100%;
+        text-align: center;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 38px;
+        letter-spacing: 0.035em;
+    }
 
-.about-us__texts {
-    width: 60%;
-    padding-top: 25px;
-    margin: 0;
-}
+    .about-us__texts {
+        width: 60%;
+        padding-top: 25px;
+        margin: 0;
+    }
 
-.about-us__text {
-    margin: 0;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 21px;
-    letter-spacing: 0.035em;
-}
+    .about-us__text {
+        margin: 0;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 21px;
+        letter-spacing: 0.035em;
+    }
 
-.about-us__text:nth-child(2) {
-    margin: 25px 0;
-}
+    .about-us__text:nth-child(2) {
+        margin: 25px 0;
+    }
 
-.about-us__images {
-    max-width: 40%;
-    border-radius: 20px;
-}
+    .about-us__images {
+        max-width: 40%;
+        border-radius: 20px;
+    }
 
-.about-us__image {
-    width: 202px;
-    height: 267px;
-}
+    .about-us__image {
+        width: 202px;
+        height: 267px;
+    }
 
-.about-us__image:first-child {
-    margin-right: 20px;
-}
+    .about-us__image:first-child {
+        margin-right: 20px;
+    }
 
 .secrets {
     display: flex;
@@ -731,52 +730,3 @@
 }
 
 
-@media screen and (max-width:768px) and (min-width:320px) {
-    
-    .page {
-        width: 100%;
-        min-width: 320px;
-        max-width: 768px;
-        overflow-x: hidden;
-    }
-
-    .header {
-        width: 100%;
-        height: 54px;
-        padding: 0 25px;
-        max-width: 1170px;
-        display: flex;
-        justify-content: space-between;
-        border-radius: 25px;
-        align-items: center;
-        background-color: #FFFFFF;
-        position: sticky;
-        top: 0px;
-        box-sizing: border-box;
-        box-shadow: 0 0 1px gray;
-        z-index: 1;
-    }
-    
-    .header__logo {
-        width: 135px;
-    }
-    
-    .header__nav-links {
-        display: none; 
-        
-    }
-    
-    
-    .header__buttons {
-        display: none;
-        
-    }
-
-    .header__menu {
-        display: block;
-        height: 25px;
-    }
-
-
-
-}
