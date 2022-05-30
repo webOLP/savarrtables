@@ -1,4 +1,5 @@
 .page {
+    width: 100%;
     min-width: 320px;
     overflow-x: hidden;
 }
@@ -98,6 +99,10 @@
     border: none;
     background-color: white;
     cursor: pointer;    
+}
+
+.header__menu {
+    display: none;
 }
 
 .mainscreen {
@@ -723,4 +728,55 @@
     margin: 0;
     text-decoration: none;
     color: #FFFFFF;
+}
+
+
+@media screen and (max-width:768px) and (min-width:320px) {
+    
+    .page {
+        width: 100%;
+        min-width: 320px;
+        max-width: 768px;
+        overflow-x: hidden;
+    }
+
+    .header {
+        width: 100%;
+        height: 54px;
+        padding: 0 25px;
+        max-width: 1170px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 25px;
+        align-items: center;
+        background-color: #FFFFFF;
+        position: sticky;
+        top: 0px;
+        box-sizing: border-box;
+        box-shadow: 0 0 1px gray;
+        z-index: 1;
+    }
+    
+    .header__logo {
+        width: 135px;
+    }
+    
+    .header__nav-links {
+        display: none; 
+        
+    }
+    
+    
+    .header__buttons {
+        display: none;
+        
+    }
+
+    .header__menu {
+        display: block;
+        height: 25px;
+    }
+
+
+
 }
