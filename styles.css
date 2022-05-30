@@ -7,6 +7,10 @@
     margin: 20px auto 60px;
 }
 
+.header__search_original {
+    display: none;
+}
+
 .header {
     width: 98%;
     height: 54px;
@@ -71,6 +75,11 @@
     padding: 0 19px 0;
     color: #959595; 
     cursor: pointer;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: 0.07em;
 }
 
 .header__search-img {
@@ -108,6 +117,7 @@
 }
 
 .mainscreen__title {
+    font-family: 'Lora';
     font-style: normal;
     font-weight: 600;
     font-size: 45px;
@@ -202,6 +212,7 @@
 
 
 .cards-about__title {
+    font-family: 'Lora';
     margin: 20px 0 10px;
     font-weight: 500;
     font-size: 25px;
@@ -236,6 +247,7 @@
 }
 
 .about-savarr__title {
+    font-family: 'Lora';
     margin: 0 0 30px;
 }
 
@@ -270,6 +282,7 @@
 }
 
 .catalog__title {
+    font-family: 'Lora';
     margin-bottom: 65px;
     font-style: normal;
     font-weight: 600;
@@ -314,6 +327,7 @@
 }
 
 .catalog__card-title {
+    font-family: 'Lora';
     width: 100%;
     font-style: normal;
     font-weight: 600;
@@ -387,6 +401,8 @@
 }
 
 .info__title {
+    font-family: 'Lora';
+    margin: 0;
     font-style: normal;
     font-weight: 600;
     font-size: 30px;
@@ -427,11 +443,204 @@
     width: 100px;
 }
 
+.info__text {
+    margin: 25px 0 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.035em;
+}
 
+.about-us {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 98%;
+    max-width: 1170px;
+    padding-top: 60px;
+    position: relative;
+}
 
+.about-us__background {
+    width: 1700px;
+    height: 400px;
+    position: absolute;
+    bottom:-200px;
+    left: -550px;
+    z-index: -1;
+}
 
+.about-us__title {
+    font-family: 'Lora';
+    margin: 0 0 33px;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: 0.035em;
+}
 
+.about-us__texts {
+    width: 60%;
+    padding-top: 25px;
+    margin: 0;
+}
 
+.about-us__text {
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    letter-spacing: 0.035em;
+}
+
+.about-us__text:nth-child(2) {
+    margin: 25px 0;
+}
+
+.about-us__images {
+    max-width: 40%;
+    border-radius: 20px;
+}
+
+.about-us__image {
+    width: 202px;
+    height: 267px;
+}
+
+.about-us__image:first-child {
+    margin-right: 20px;
+}
+
+.secrets {
+    display: flex;
+    justify-content: space-between;
+    width: 98%;
+    max-width: 1170px;
+    padding-top: 220px;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.secrets__title {
+    font-family: 'Lora';
+    width: 100%;
+    margin: 0 0 33px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: 0.035em;
+}
+
+.secrets__image {
+    width: 396px;
+    height: 263px;
+    border-radius: 20px;
+}
+
+.secrets__texts {
+    width: 60%;
+    padding-top: 23px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    text-align: right;
+    letter-spacing: 0.035em;
+}
+
+.secrets__text {
+    margin: 0;
+    text-align: right;
+}
+
+.secrets__text:nth-child(2) {
+    margin: 25px 0;
+}
+
+.secrets__background {
+    position: absolute;
+    width: 1600px;
+    height: 350px;
+    bottom: -150px;
+    right: -500px;
+    transform: rotate(180deg);
+    z-index: -1;
+}
+
+.advantages {
+    width: 98%;
+    max-width: 1170px;
+    padding-top: 150px;
+}
+
+.advantages__title {
+    font-family: 'Lora';
+    margin: 0 0 70px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: 0.035em;
+}
+
+.advantages__image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.contacts {
+    width: 98%;
+    max-width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 70px 0 60px;
+}
+
+.contacts__title {
+    font-family: 'Lora';
+    width: 100%;
+    margin: 0 0 33px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: 0.035em;
+}
+
+.contacts__ways {
+    width: 430px;
+    display: grid;
+    grid-template-columns: 40px 370px;
+    grid-template-rows: repeat(4, 40px);
+    gap: 20px;
+    row-gap: 40px;
+}
+
+.contacts__text {
+    margin: auto 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    letter-spacing: 0.035em;
+}
+
+.contacts__map {
+    border-radius: 20px;
+    position:relative;
+    overflow:hidden;
+}
 
 .footer {
     width: 100%;
