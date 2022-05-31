@@ -652,6 +652,11 @@ html,.page {
     border-radius: 20px;
     position:relative;
     overflow:hidden;
+    width: 660px;
+}
+
+.contacts__iframe {
+    width: 100%;
 }
 
 .footer {
