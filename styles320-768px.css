@@ -1,8 +1,8 @@
 @media screen and (max-width:768px) and (min-width:320px) {
     
-    .page {
-        width: 100%;
+    html,.page {
         min-width: 320px;
+        max-width: 100%;
         overflow-x:   hidden;
     }
 
@@ -134,7 +134,7 @@
         display: grid;
         width: 98%;
         gap: 15px;
-        grid-template-rows: 180px 180px 180px;
+        grid-template-rows: 200px 200px 200px;
         grid-template-columns: 1fr;
         height: auto;
     }
@@ -228,7 +228,7 @@
 
     .catalog {
         width: 98%;
-        padding: 35px 0 0;
+        padding: 15px 0 0;
         text-align: center;
         position: relative;
        
@@ -243,6 +243,7 @@
         font-size: 30px;
         line-height: 38px;
         letter-spacing: 0.035em;
+        margin: 0 auto 15px;
     }
     
     .catalog__card {
@@ -313,7 +314,7 @@
     
     .catalog-grid {
         display: grid;
-        gap: 58px;
+        gap: 24px;
         grid-template-columns: repeat(auto-fit, minmax(320px, 90%));
         justify-content: center;
     }
