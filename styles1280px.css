@@ -2,6 +2,8 @@ html,.page {
     min-width: 320px;
     max-width: 100%;
     overflow-x: hidden;
+    height: auto;
+    position: relative;
 }
 
 .content {
@@ -9,6 +11,7 @@ html,.page {
 }
 
 .header {
+    margin-top:0;
     width: 98%;
     height: 54px;
     padding: 0 25px;
@@ -18,8 +21,10 @@ html,.page {
     border-radius: 25px;
     align-items: center;
     background-color: #FFFFFF;
-    position: sticky;
-    top: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     box-sizing: border-box;
     box-shadow: 0 0 1px gray;
     z-index: 1;
@@ -104,7 +109,7 @@ html,.page {
 .mainscreen {
     width: 98%;
     max-width: 1170px;
-    
+    padding-top: 54px;
     height: 650px;
     display: flex;
     position: relative;
@@ -732,4 +737,80 @@ html,.page {
     color: #FFFFFF;
 }
 
+.popup {
+    position: fixed;
+    top:0;
+    width: 100%;
+    background-color: white;
+    border-bottom: 4px solid black;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding: 15px 15px 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: none;
+}
 
+.popup_is_open {
+    display: flex;
+}
+
+.popup__logo {
+    width: 150px;
+    
+}
+
+.popup__nav-links {
+    color: black;
+    width: 100%;
+    
+}
+
+.popup__links {
+    list-style-type: none;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    font-size: 35px;
+    line-height: 45px;
+    text-align: center;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+}
+
+.popup__link {
+    
+    width: 100%;
+    text-decoration: none;
+    color: black;
+  
+}
+
+.popup__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+   
+
+}
+
+.popup__background {
+    position: absolute;
+    width: 150%;
+    left: -70px;
+    z-index: -2;
+    top: 70px;
+    transform: rotate(10deg);
+}
+
+.popup__window {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

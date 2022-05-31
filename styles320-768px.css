@@ -11,6 +11,7 @@
     }
 
     .header {
+        margin-top: 0;
         width: 98%;
         height: 54px;
         padding: 0 25px;
@@ -20,8 +21,10 @@
         border-radius: 25px;
         align-items: center;
         background-color: #FFFFFF;
-        position: sticky;
-        top: 0px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
         box-sizing: border-box;
         box-shadow: 0 0 1px gray;
         z-index: 1;
@@ -53,7 +56,7 @@
         max-width: 1170px;
         display: flex;
         position: relative;
-
+        
     }
     
     .mainscreen__text {
@@ -549,8 +552,8 @@
     .contacts {
         width: 95%;
         display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        flex-direction: column;
+
         align-items: center;
         padding: 20px 0 20px;
     }

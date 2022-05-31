@@ -7,17 +7,18 @@
     <title>Savarr - столы на заказ</title>
     <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./page.css">
+    <script src="./jquery-latest.js" type="text/javascript"></script>
 </head>
-<body class="page">
+<body id="top" class="page">
     <header class="header content">
         <img src="./images/logo.png" alt="Лого" class="header__logo" >
         <nav class="header__nav-links">
             <ul class="header__links">
-                <li><a href="" class="header__link">Главная</a></li>
-                <li><a href="" class="header__link">Каталог</a></li>
-                <li><a href="" class="header__link">Доставка</a></li>
-                <li><a href="" class="header__link">О нас</a></li>
-                <li><a href="" class="header__link">Контакты</a></li>
+                <li><a href="#top" class="header__link scrollto">Главная</a></li>
+                <li><a href="#catalog" class="header__link scrollto">Каталог</a></li>
+                <li><a href="#delivery" class="header__link scrollto">Доставка</a></li>
+                <li><a href="#about-us" class="header__link scrollto">О нас</a></li>
+                <li><a href="#contacts" class="header__link scrollto">Контакты</a></li>
             </ul>
         </nav>
             <div class="header__buttons">
@@ -76,7 +77,7 @@
         <img src="./images/about-savarr.png" alt="" class="about-savarr__image">
         <img src="./images/background__brown1.png" alt="" class="about-savarr__background">
     </section>
-    <section class="catalog content">
+    <section id="catalog" class="catalog content">
         <h2 class="catalog__title">Каталог товаров</h2>
         <div class="catalog-grid">
             <div class="catalog__card">
@@ -137,7 +138,7 @@
         <button class="catalog__button-more">Показать ещё</button>
         <img src="./images/background_purple.png" alt="" class="catalog__background">
     </section>
-    <section class="info content">
+    <section id="delivery" class="info content">
         <h2 class="info__title">Оплата, доставка, гарантия</h2>
         <div class="info__cards">
             <div class="info__card">
@@ -159,7 +160,7 @@
             </div>
     </div>
     </section>
-    <section class="about-us content">
+    <section id="about-us" class="about-us content">
         <h2 class="about-us__title">О нас</h2>
         <div class="about-us__texts">
             <p class="about-us__text">МЫ - крупнейшая в Карелии мастерская по производству 
@@ -201,7 +202,7 @@
         <h2 class="advantages__title">Преимущества нашей мастерской</h2>
         <img src="./images/advantages.png" alt="" class="advantages__image">
     </section>
-    <section class="contacts content">
+    <section id="contacts" class="contacts content">
         <h2 class="contacts__title">Контакты</h2>
         <div class="contacts__ways">
             <img src="./images/contacts__point.svg" alt=""class="contacts__image">
@@ -229,19 +230,39 @@
                 <img src="./images/logo_footer.png" alt="Лого" class="footer__logo" >
                 <nav class="footer__nav-links">
                     <ul class="footer__links">
-                        <li><a href="" class="footer__link">Главная</a></li>
-                        <li><a href="" class="footer__link">Каталог</a></li>
-                        <li><a href="" class="footer__link">Доставка</a></li>
-                        <li><a href="" class="footer__link">О нас</a></li>
-                        <li><a href="" class="footer__link">Контакты</a></li>
+                        <li><a href="#top" class="footer__link scrollto">Главная</a></li>
+                        <li><a href="#catalog" class="footer__link scrollto">Каталог</a></li>
+                        <li><a href="#delivery" class="footer__link scrollto">Доставка</a></li>
+                        <li><a href="#about-us" class="footer__link scrollto">О нас</a></li>
+                        <li><a href="#contacts" class="footer__link scrollto">Контакты</a></li>
                     </ul>
                 </nav>
-                <a href="#"><img src="./images/footer_up.svg" alt="" class="footer__up"></a>
+                <a href="#top" class="scrollto"><img src="./images/footer_up.svg" alt="" class="footer__up"></a>
         </div>
         <div class="footer__terms">
             <a href="#" class="footer__terms-of-use">Политика конфиденциальности</a>
             <a href="#" class="footer__copyright">2021 © Все права защищены</a>
         </div>
     </footer>
+    <div class="popup">
+        <button class="popup__close">
+            <img src="./images/popup__close.svg" alt="" class="popup__close-image">
+        </button>
+        <div class="popup__window">
+            <img src="./images/logo.png" alt="" class="popup__logo">
+            <nav class="popup__nav-links">
+                <ul class="popup__links">
+                    <li><a href="#top" class="popup__link scrollto">Главная</a></li>
+                    <li><a href="#catalog" class="popup__link scrollto">Каталог</a></li>
+                    <li><a href="#delivery" class="popup__link scrollto">Доставка</a></li>
+                    <li><a href="#about-us" class="popup__link scrollto">О нас</a></li>
+                    <li><a href="#contacts" class="popup__link scrollto">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+    </div>
+    <script src="./script.js"></script>
+    
 </body>
 </html>
